@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bienvenido</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    background-color:#3355FF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.logo {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #2a28d4;
+    border-radius: 4px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #0c0c0c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.forgot-password {
+    color: #070707;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <img src="Imagen/1.jpg" alt="Logo" class="logo">
+    <h2>Bienvenido</h2>
+    <div class="input-group">
+        <input type="email" placeholder="Correo electrónico" id="email">
+        <input type="password" placeholder="Contraseña" id="password">
+    </div>
+    <button class="btn" onclick="login()">Iniciar Sesión</button>
+    <a href="#" class="forgot-password">¿Olvidaste la contraseña?</a>
+    <p>¿No tienes cuenta? <a href="#">Regístrate aquí</a></p>
+</div>
+
+<script>
+function login() {
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+    console.log('Email:', email);
+    console.log('Contraseña:', password);
+}
+</script>
+</body>
+</html>
